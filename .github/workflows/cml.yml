@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - experiment
   pull_request:
     branches:
       - master
@@ -18,6 +19,7 @@ jobs:
               repo_token: ${{ secrets.GITHUB_TOKEN }}
         - run: |
               curl https://raw.githubusercontent.com/automl/auto-sklearn/master/requirements.txt | xargs -n 1 -L 1 pip install
+              pip install cython
               pip install -r requirements.txt
               python train_copy.py
 
