@@ -1,5 +1,6 @@
 setuptools
 sklearn
+wheel
 auto-sklearn
 pipelineprofiler
 shap
