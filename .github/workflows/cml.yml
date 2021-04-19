@@ -17,10 +17,10 @@ jobs:
           env:
               repo_token: ${{ secrets.GITHUB_TOKEN }}
         - run: |
-              curl https://raw.githubusercontent.com/automl/auto-sklearn/master/requirements.txt | xargs -n 1 -L 1 pip install
               pip install cython
               sudo apt-get install build-essential python3 python3-dev swig
               pip install -U -r requirements.txt  --no-use-pep517 
+              curl https://raw.githubusercontent.com/automl/auto-sklearn/master/requirements.txt | xargs -n 1 -L 1 pip install
               python train_copy.py
 
               cat metrics.txt >> report.md
