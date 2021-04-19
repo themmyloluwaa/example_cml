@@ -17,9 +17,9 @@ jobs:
           env:
               repo_token: ${{ secrets.GITHUB_TOKEN }}
         - run: |
-              pip install cython
+              pip3 install cython
               sudo apt-get install build-essential python3 python3-dev swig
-              pip install -U -r requirements.txt  --no-use-pep517 
+              pip3 install -U -r requirements.txt  --no-use-pep517 
               curl https://raw.githubusercontent.com/automl/auto-sklearn/master/requirements.txt | xargs -n 1 -L 1 pip install
               python train_copy.py
 
