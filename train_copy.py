@@ -27,7 +27,7 @@ plotly.__version__
 # In[ ]:
 
 
-data_path = "/data/"
+data_path = "./data/"
 
 
 # In[ ]:
