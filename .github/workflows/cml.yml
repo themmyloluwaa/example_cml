@@ -24,8 +24,8 @@ jobs:
               pip install --upgrade plotly
               pip install pandas-profiling
               pip3 install -U scikit-learn
-              python train_copy.py
               ls -lh
+              python train_copy.py
               cat metrics.txt >> report.md
               cml-publish *.png --md >> report.md
               cml-send-comment report.md
