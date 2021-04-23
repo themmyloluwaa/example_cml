@@ -15,7 +15,7 @@ jobs:
         - name: cml_run
           uses: actions/checkout@v2
           env:
-              repo_token: ${{ secrets.ML_CI_TOKEN }}
+              repo_token: ${{ secrets.GITHUB_TOKEN }}
         - run: |
               sudo apt-get update
               sudo apt-get install build-essential swig python3-dev
