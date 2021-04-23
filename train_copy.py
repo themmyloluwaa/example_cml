@@ -33,7 +33,7 @@ data_path = "./data/"
 # In[ ]:
 
 
-model_path = "models/"
+model_path = "./models/"
 
 
 # In[ ]:
