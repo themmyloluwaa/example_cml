@@ -27,5 +27,4 @@ jobs:
               ls -lh
               python train_copy.py
               cat metrics.txt >> report.md
-              cml-publish *.png --md >> report.md
               cml-send-comment report.md
