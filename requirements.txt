@@ -1,3 +1,9 @@
 setuptools
 sklearn
+wheel
+auto-sklearn
+pipelineprofiler
+shap
+plotly
+scikit-learn
 matplotlib
